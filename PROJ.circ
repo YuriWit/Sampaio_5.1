@@ -80,9 +80,6 @@
     <comp lib="1" loc="(920,930)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="4" loc="(610,390)" name="ROM">
-      <a name="appearance" val="logisim_evolution"/>
-    </comp>
     <comp lib="5" loc="(460,100)" name="DipSwitch">
       <a name="facing" val="south"/>
     </comp>
@@ -554,5 +551,54 @@
     <wire from="(870,310)" to="(880,310)"/>
     <wire from="(880,270)" to="(880,300)"/>
     <wire from="(900,290)" to="(920,290)"/>
+  </circuit>
+  <circuit name="ROM_1">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="ROM_1"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">ROM_BE</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="204" y="85">ROM_OE</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="255" y="64">ROM_BD</text>
+      <rect height="20" stroke="none" width="200" x="60" y="90"/>
+      <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="104">ROM_1</text>
+      <polyline fill="none" points="60,60 50,60" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="260,60 270,60" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="260,80 270,80" stroke="#000000" stroke-width="3"/>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="420,280" x="50" y="60"/>
+      <circ-port dir="in" pin="750,390" x="270" y="80"/>
+      <circ-port dir="out" pin="740,330" x="270" y="60"/>
+    </appear>
+    <comp lib="0" loc="(420,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ROM_BE"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(740,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ROM_BD"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(750,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ROM_OE"/>
+    </comp>
+    <comp lib="1" loc="(720,330)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="4" loc="(430,270)" name="ROM">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(420,280)" to="(430,280)"/>
+    <wire from="(670,330)" to="(700,330)"/>
+    <wire from="(710,340)" to="(710,390)"/>
+    <wire from="(710,390)" to="(750,390)"/>
+    <wire from="(720,330)" to="(740,330)"/>
   </circuit>
 </project>
