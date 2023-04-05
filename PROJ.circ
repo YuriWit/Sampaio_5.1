@@ -68,7 +68,6 @@
       <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="74">main</text>
       <circ-anchor facing="east" x="50" y="50"/>
     </appear>
-    <comp lib="0" loc="(250,510)" name="Clock"/>
     <comp lib="5" loc="(1150,1010)" name="DotMatrix">
       <a name="inputtype" val="row"/>
       <a name="matrixcols" val="8"/>
@@ -647,7 +646,6 @@
       <circ-port dir="in" pin="750,390" x="270" y="80"/>
       <circ-port dir="out" pin="740,330" x="270" y="60"/>
     </appear>
-    <comp lib="0" loc="(260,540)" name="Clock"/>
     <comp lib="0" loc="(420,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="ROM_AB"/>

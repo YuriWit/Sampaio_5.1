@@ -20,7 +20,7 @@ Definição de como montar uma instrução
 
 ;   exemplo de codigo
     MOV R0, 1       ;   0001 0000 0000 0001
-    MOV R1, 6       ;   0001 0100 0000 0101
+    MOV R1, 6       ;   0001 0100 0000 0111
     MOV R2, R1      ;   0000 1001
     ADD R2, R1      ;   0010 1001
     MOV [R2], R1    ;   0011 1001
