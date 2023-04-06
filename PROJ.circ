@@ -61,22 +61,18 @@
     <a name="appearance" val="custom"/>
     <a name="circuit" val="main"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <a name="simulationFrequency" val="8.0"/>
+    <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect height="20" stroke="none" width="200" x="60" y="60"/>
       <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
       <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="74">main</text>
       <circ-anchor facing="east" x="50" y="50"/>
     </appear>
-    <comp lib="5" loc="(1150,1010)" name="DotMatrix">
-      <a name="inputtype" val="row"/>
-      <a name="matrixcols" val="8"/>
-      <a name="matrixrows" val="1"/>
+    <comp lib="0" loc="(1110,1050)" name="Probe">
+      <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="5" loc="(890,1010)" name="DotMatrix">
-      <a name="inputtype" val="row"/>
-      <a name="matrixcols" val="8"/>
-      <a name="matrixrows" val="1"/>
+    <comp lib="0" loc="(850,1050)" name="Probe">
+      <a name="appearance" val="NewPins"/>
     </comp>
     <comp loc="(1110,160)" name="REGISTERS"/>
     <comp loc="(1110,270)" name="ALU"/>
@@ -86,6 +82,7 @@
     <comp loc="(1110,810)" name="ROM_1"/>
     <comp loc="(1110,900)" name="RAM_1"/>
     <comp loc="(740,160)" name="CONTROL_LOGIC"/>
+    <wire from="(1110,1050)" to="(1130,1050)"/>
     <wire from="(1110,160)" to="(1130,160)"/>
     <wire from="(1110,180)" to="(1130,180)"/>
     <wire from="(1110,270)" to="(1130,270)"/>
@@ -96,7 +93,6 @@
     <wire from="(1110,810)" to="(1130,810)"/>
     <wire from="(1110,900)" to="(1130,900)"/>
     <wire from="(1110,920)" to="(1130,920)"/>
-    <wire from="(1130,1010)" to="(1150,1010)"/>
     <wire from="(1130,160)" to="(1130,180)"/>
     <wire from="(1130,180)" to="(1130,270)"/>
     <wire from="(1130,270)" to="(1130,290)"/>
@@ -106,14 +102,14 @@
     <wire from="(1130,680)" to="(1130,810)"/>
     <wire from="(1130,810)" to="(1130,900)"/>
     <wire from="(1130,900)" to="(1130,920)"/>
-    <wire from="(1130,920)" to="(1130,1010)"/>
+    <wire from="(1130,920)" to="(1130,1050)"/>
     <wire from="(430,160)" to="(430,510)"/>
     <wire from="(430,160)" to="(520,160)"/>
     <wire from="(430,510)" to="(870,510)"/>
-    <wire from="(440,740)" to="(880,740)"/>
     <wire from="(480,180)" to="(480,490)"/>
     <wire from="(480,180)" to="(520,180)"/>
     <wire from="(480,490)" to="(860,490)"/>
+    <wire from="(660,740)" to="(880,740)"/>
     <wire from="(740,160)" to="(890,160)"/>
     <wire from="(740,180)" to="(890,180)"/>
     <wire from="(740,200)" to="(870,200)"/>
@@ -146,13 +142,13 @@
     <wire from="(830,550)" to="(890,550)"/>
     <wire from="(840,260)" to="(840,440)"/>
     <wire from="(840,440)" to="(890,440)"/>
+    <wire from="(850,1050)" to="(870,1050)"/>
     <wire from="(850,240)" to="(850,310)"/>
     <wire from="(850,310)" to="(890,310)"/>
     <wire from="(860,220)" to="(860,290)"/>
     <wire from="(860,290)" to="(890,290)"/>
     <wire from="(860,330)" to="(860,490)"/>
     <wire from="(860,330)" to="(890,330)"/>
-    <wire from="(870,1010)" to="(890,1010)"/>
     <wire from="(870,200)" to="(870,270)"/>
     <wire from="(870,270)" to="(890,270)"/>
     <wire from="(870,420)" to="(870,510)"/>
@@ -163,7 +159,7 @@
     <wire from="(870,680)" to="(890,680)"/>
     <wire from="(870,810)" to="(870,900)"/>
     <wire from="(870,810)" to="(890,810)"/>
-    <wire from="(870,900)" to="(870,1010)"/>
+    <wire from="(870,900)" to="(870,1050)"/>
     <wire from="(870,900)" to="(890,900)"/>
     <wire from="(880,200)" to="(880,350)"/>
     <wire from="(880,200)" to="(890,200)"/>
@@ -326,7 +322,7 @@
     <a name="appearance" val="custom"/>
     <a name="circuit" val="REGISTERS"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="4.0"/>
     <appear>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="84">R_WR</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="104">R_OE</text>
@@ -825,7 +821,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="CONTROL_LOGIC"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="2.0"/>
     <appear>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">INSTRUCTION</text>
