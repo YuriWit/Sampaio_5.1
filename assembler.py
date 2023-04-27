@@ -1,5 +1,4 @@
 import argparse
-import string
 
 # parse parameters from cmd
 parser = argparse.ArgumentParser()
