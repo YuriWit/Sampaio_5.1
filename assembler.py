@@ -53,6 +53,8 @@ for cmd in cmds:
         opcodes.append(64 + 16 + int(cmd[3])*4)
 
 # generate program
+if len(opcodes) > 16*16:
+    raise Exception("program is too long over 256 bytes")
 program = "v3.0 hex words addressed\n"
 for i in range(16):
     program += format(i*16, '02x') + ":"
